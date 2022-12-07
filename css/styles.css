@@ -114,11 +114,15 @@ body {
   color: var(--hero-font-color);
   background-color: var(--background-color);
   background-image: linear-gradient(
-    to bottom,
-    var(--bg-overlay-color),
-    var(--bg-overlay-color),
-    url(../images/background.png)
-  );
+      to bottom,
+      var(--bg-overlay-color),
+      var(--bg-overlay-color)
+    ),
+    url(../images/background.png);
+  background-position: center;
+  background-size: 1600px;
+  background-repeat: no-repeat;
+
   padding: 94px;
 }
 
@@ -143,6 +147,7 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--selection-color);
   border: none;
+  border-radius: 4px;
   color: var(--hero-font-color);
   cursor: pointer;
   margin: 0 auto;

@@ -135,7 +135,7 @@ body {
   background-size: 1600px;
   background-repeat: no-repeat;
 
-  padding: 94px;
+  padding: 200px 94px;
 }
 
 .hero-head {
@@ -180,7 +180,20 @@ body {
 .our-assets > .container {
   margin: 0 auto;
 }
+.assets-container {
+  width: 270px;
+  background-color: var(--our-team-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
 
+.antenna {
+  padding: 25px 102.34px;
+}
+
+.clock {
+  padding: 25px 101.5px;
+}
 .our-assets-list {
   display: flex;
   flex-wrap: wrap;

@@ -194,6 +194,16 @@ body {
 .clock {
   padding: 25px 101.5px;
 }
+.diagram {
+  padding-top: 33.2px;
+  padding-bottom: 33.1px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.astronaut {
+  padding: 25px 100px;
+}
 .our-assets-list {
   display: flex;
   flex-wrap: wrap;

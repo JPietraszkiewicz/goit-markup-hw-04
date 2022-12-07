@@ -3,6 +3,7 @@
   --text-color: #757575;
   --selection-color: #2196f3;
   --background-color: #2f303a;
+  --bg-overlay-color: rgba(47, 48, 58, 0.4);
   --hero-font-color: #ffffff;
   --footer-logo-address-color: rgba(255, 255, 255, 1);
   --footer-links-color: rgba(255, 255, 255, 0.6);
@@ -112,6 +113,12 @@ body {
 .hero {
   color: var(--hero-font-color);
   background-color: var(--background-color);
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-overlay-color),
+    var(--bg-overlay-color),
+    url(../images/background.png)
+  );
   padding: 94px;
 }
 

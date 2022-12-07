@@ -1,6 +1,7 @@
 :root {
   --primary-color: #212121;
   --text-color: #757575;
+  --header-contacts-color: rgba(117, 117, 117, 1);
   --selection-color: #2196f3;
   --background-color: #2f303a;
   --bg-overlay-color: rgba(47, 48, 58, 0.4);
@@ -64,7 +65,7 @@ body {
   padding: 0;
   margin-top: 32px;
   margin-bottom: 32px;
-  margin-right: 371px;
+  margin-right: 345px;
 }
 
 .nav-item {
@@ -82,7 +83,7 @@ body {
 }
 .contacts-list {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   padding: 0;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -96,13 +97,24 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--header-contacts-color);
+}
+.contact-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: var(--header-contacts-color);
 }
 
 .header-tel-link:hover,
 .header-tel-link:focus {
   color: var(--selection-color);
+  fill: var(--selection-color);
 }
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: var(--selection-color);
+}
+
 .header-mail-link:hover,
 .header-mail-link:focus {
   color: var(--selection-color);

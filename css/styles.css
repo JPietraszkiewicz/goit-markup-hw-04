@@ -435,12 +435,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+.footer-sm-list-item:hover,
+.footer-sm-list-item:focus,
+.footer-sm-list-item:active {
+  background-color: var(--selection-color);
+}
+
 .footer-join-us {
   font-size: 14px;
   line-height: 1.17;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--footer-logo-address-color);
+}
+.ftr-sm {
+  fill: var(--footer-logo-address-color);
 }
 .footer-logo {
   font-family: "Raleway";
@@ -453,11 +462,11 @@ body {
   padding-bottom: 20px;
   display: flex;
 }
-
 .address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-style: normal;
   color: var(--footer-logo-address-color);
   padding-bottom: 9px;
 }

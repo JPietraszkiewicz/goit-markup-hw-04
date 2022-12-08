@@ -9,6 +9,7 @@
   --footer-logo-address-color: rgba(255, 255, 255, 1);
   --footer-links-color: rgba(255, 255, 255, 0.6);
   --our-team-background-color: #f5f4fa;
+  --icon-color: rgba(175, 177, 184, 1);
 }
 
 *,
@@ -112,7 +113,7 @@ body {
 }
 .contact-icon:hover,
 .contact-icon:focus {
-  fill: var(--selection-color);
+  fill: currentColor;
 }
 
 .header-mail-link:hover,
@@ -316,6 +317,38 @@ body {
   color: var(--text-color);
   text-align: center;
   padding-bottom: 30px;
+}
+.sm-icons-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+
+.sm-list-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sm-icon {
+  fill: var(--icon-color);
+}
+
+.sm-icon:hover,
+.sm-icon:focus,
+.sm-icon:active {
+  fill: var(--footer-logo-address-color);
+}
+
+.sm-list-item:hover,
+.sm-list-item:focus,
+.sm-list-item:active {
+  background-color: var(--selection-color);
+  border-radius: 50%;
 }
 
 /* NASI KLIENCI */

@@ -366,6 +366,34 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-color);
 }
+.our-clients-li {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.our-clients-li:hover,
+.our-clients-li:focus,
+.our-clients-li:active,
+.our-clients-icon:hover,
+.our-clients-icon:focus,
+.our-clients-icon:active {
+  border-color: var(--selection-color);
+  fill: var(--selection-color);
+}
+.our-clients-icons {
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+  padding-top: 50px;
+}
+
+.our-clients-icon {
+  fill: var(--icon-color);
+}
 
 /* FOOTER */
 

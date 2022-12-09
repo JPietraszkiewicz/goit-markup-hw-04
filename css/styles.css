@@ -371,7 +371,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-color);
 }
-.our-clients-li {
+.clients-link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -380,13 +380,19 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.our-clients-li:hover,
-.our-clients-li:focus,
-.our-clients-li:active,
-.clients-icon:hover,
-.clients-icon:focus,
-.clients-icon:active {
+.clients-link:hover,
+.clients-link:focus,
+.clients-link:active {
   border-color: var(--selection-color);
+}
+
+.clients-link:hover > .clients-icon {
+  fill: var(--selection-color);
+}
+.clients-link:focus > .clients-icon {
+  fill: var(--selection-color);
+}
+.clients-link:active > .clients-icon {
   fill: var(--selection-color);
 }
 .our-clients-icons {
@@ -396,7 +402,7 @@ body {
   padding-top: 50px;
 }
 
-.our-clients-icon {
+.clients-icon {
   fill: var(--icon-color);
 }
 

@@ -335,21 +335,25 @@ body {
   justify-content: center;
   align-items: center;
 }
-.sm-icon {
-  fill: var(--icon-color);
-}
-
-.sm-icon:hover,
-.sm-icon:focus,
-.sm-icon:active {
-  fill: var(--footer-logo-address-color);
-}
-
 .sm-list-item:hover,
 .sm-list-item:focus,
 .sm-list-item:active {
-  background-color: var(--selection-color);
   border-radius: 50%;
+  background-color: var(--selection-color);
+}
+
+.sm-list-item:hover > .sm-icon {
+  fill: var(--footer-logo-address-color);
+}
+.sm-list-item:focus > .sm-icon {
+  fill: var(--footer-logo-address-color);
+}
+.sm-list-item:active > .sm-icon {
+  fill: var(--footer-logo-address-color);
+}
+
+.sm-icon {
+  fill: var(--icon-color);
 }
 
 /* NASI KLIENCI */
@@ -379,9 +383,9 @@ body {
 .our-clients-li:hover,
 .our-clients-li:focus,
 .our-clients-li:active,
-.our-clients-icon:hover,
-.our-clients-icon:focus,
-.our-clients-icon:active {
+.clients-icon:hover,
+.clients-icon:focus,
+.clients-icon:active {
   border-color: var(--selection-color);
   fill: var(--selection-color);
 }

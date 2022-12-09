@@ -110,17 +110,20 @@ body {
 }
 
 .header-tel-link:hover,
-.header-tel-link:focus {
+.header-tel-link:focus,
+.header-tel-link:active {
   color: var(--selection-color);
   fill: var(--selection-color);
 }
 .contact-icon:hover,
-.contact-icon:focus {
+.contact-icon:focus,
+.contact-icon:active {
   fill: currentColor;
 }
 
 .header-mail-link:hover,
-.header-mail-link:focus {
+.header-mail-link:focus,
+.header-mail-link:active {
   color: var(--selection-color);
 }
 

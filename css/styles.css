@@ -89,6 +89,7 @@ body {
   padding: 0;
   margin-top: 32px;
   margin-bottom: 32px;
+  align-items: center;
 }
 
 .header-tel-link,
@@ -101,9 +102,10 @@ body {
   text-decoration: none;
   color: var(--header-contacts-color);
 }
+
 .contact-icon {
-  vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 8px;
+  margin-top: 8px;
   fill: currentColor;
 }
 
@@ -522,7 +524,7 @@ body {
 }
 
 .filters-btn {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;

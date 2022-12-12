@@ -8,7 +8,7 @@
   --hero-font-color: #ffffff;
   --footer-logo-address-color: rgba(255, 255, 255, 1);
   --footer-links-color: rgba(255, 255, 255, 0.6);
-  --our-team-background-color: #f5f4fa;
+
   --icon-color: rgba(175, 177, 184, 1);
   --footer-icons-bg: rgba(255, 255, 255, 0.1);
 }
@@ -275,7 +275,7 @@ body {
 /* NASZ ZESPÓŁ */
 
 .our-team-section {
-  background-color: var(--our-team-background-color);
+  background-color: var(--hero-font-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -324,7 +324,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
   text-align: center;
-  padding-bottom: 30px;
 }
 .sm-icons-list {
   list-style: none;
@@ -343,7 +342,6 @@ body {
   align-items: center;
 }
 .sm-list-item:hover,
-.sm-list-item:focus,
 .sm-list-item:active {
   border-radius: 50%;
   background-color: var(--selection-color);
@@ -351,6 +349,12 @@ body {
 
 .sm-list-item:hover > .sm-icon {
   fill: var(--footer-logo-address-color);
+}
+
+.sm-list-item:focus {
+  outline: none;
+  border-radius: 50%;
+  background-color: var(--selection-color);
 }
 .sm-list-item:focus > .sm-icon {
   fill: var(--footer-logo-address-color);
@@ -388,11 +392,14 @@ body {
   border-radius: 4px;
 }
 .clients-link:hover,
-.clients-link:focus,
 .clients-link:active {
   border-color: var(--selection-color);
 }
-
+.clients-link:focus {
+  outline: none;
+  border: 1px solid var(--selection-color);
+  border-radius: 4px;
+}
 .clients-link:hover > .clients-icon {
   fill: var(--selection-color);
 }

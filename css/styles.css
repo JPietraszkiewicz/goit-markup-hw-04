@@ -335,31 +335,33 @@ body {
 }
 
 .sm-list-item {
-  width: 44px;
-  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sm-list-item:hover,
-.sm-list-item:active {
+
+.sm-team-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+.sm-team-link:hover {
   border-radius: 50%;
   background-color: var(--selection-color);
 }
 
-.sm-list-item:hover > .sm-icon {
+.sm-team-link:hover > .sm-icon {
   fill: var(--footer-logo-address-color);
 }
 
-.sm-list-item:focus {
+.sm-team-link:focus {
   outline: none;
   border-radius: 50%;
   background-color: var(--selection-color);
 }
-.sm-list-item:focus > .sm-icon {
-  fill: var(--footer-logo-address-color);
-}
-.sm-list-item:active > .sm-icon {
+.sm-team-link:focus > .sm-icon {
   fill: var(--footer-logo-address-color);
 }
 

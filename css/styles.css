@@ -102,10 +102,12 @@ body {
   text-decoration: none;
   color: var(--header-contacts-color);
 }
-
+.header-tel-link {
+  display: flex;
+  align-items: center;
+}
 .contact-icon {
   margin-right: 8px;
-  margin-top: 8px;
   fill: currentColor;
 }
 
